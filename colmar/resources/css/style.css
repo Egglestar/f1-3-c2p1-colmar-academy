@@ -1,0 +1,477 @@
+/* STYLE-SHEET FOR COLMAR ACADEMY */
+
+html {
+  font-size: 16px;
+  font-family: 'Oswald', sans-serif;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: rgb(74, 74, 74);
+}
+
+h2 {
+  font-size: 1.5rem;
+  color: rgb(74,74,74);
+}
+
+h3 {
+  font-size: 1.5rem;
+  color: rgb(74, 74, 74);
+}
+
+h4 {
+  font-size: 1rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  line-height: 200%;
+}
+
+/* HEADER LOGO AND NAVBAR */
+
+header {
+  width: 100%;
+
+  background-color: rgb(256, 256, 256);
+  position: fixed;
+}
+
+.desktop {
+  height: 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+#logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 1.5rem;
+  font-size: 2rem;
+}
+
+#logo h1 {
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: rgb(74, 74, 74);
+}
+
+#logo span {
+  color: rgb(146, 146, 146);
+  font-weight: 300;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 1.5rem;
+  list-style: none;
+}
+
+nav li {
+  padding-left: 1rem;
+  font-size: 1.5rem;
+}
+
+nav a{
+  font-size: 1.3rem;
+  color: rgb(72, 72, 72);
+}
+
+.mobile {
+  display: none;
+}
+
+  /* HEADER - MOBILE */
+
+@media only screen and (max-width: 1072px) {
+
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: inherit;
+  }
+
+  .mobile ul {
+    height: 4rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  nav ul {
+    padding: 0;
+  }
+
+
+}
+
+/* BANNER */
+
+main {
+  max-width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#banner {
+  width: 100%;
+  height: auto;
+  display: flex;
+  background-color: rgb(216, 216, 216);
+  padding-top: 4rem;
+}
+
+#banner img {
+  width: 60%;
+  height: auto;
+  padding: 2rem 1.5rem;
+}
+
+.banner-text {
+  margin: auto 10% auto 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.banner-text h1, .banner-text h2 {
+  margin-bottom: 2rem;
+}
+
+.banner-text a {
+  background-color: rgb(74, 74, 74);
+  padding: 0.5rem;
+  color: white;
+  text-align: center;
+}
+
+  /* BANNER-MOBILE */
+
+@media only screen and (max-width: 1072px) {
+
+  #banner {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  #banner img {
+    width: 100%;
+    height: auto;
+    padding: 0;
+  }
+
+  .banner-text {
+    padding: 0;
+    width: 100%;
+    margin: 0;
+    display: inherit;
+    align-self: flex-start;
+  }
+
+.banner-text h1, .banner-text h2 {
+  padding: 2rem 0 0 1rem;
+  margin: 0;
+}
+
+  .banner-text a {
+    align-self: center;
+    width: 90%;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+    font-weight: bold;
+  }
+}
+
+
+/* INFORMATION */
+
+#information {
+  display: flex;
+  background-color: rgb(247, 247, 247);
+  padding-bottom: 2rem;
+}
+
+#main-bar {
+  width: 60%;
+  height: auto;
+  padding: 2rem 1.5rem 0 1.5rem;
+}
+
+#main-bar img {
+  width: 100%;
+  height: auto;
+}
+
+#main-bar h1 {
+  padding: 2rem 0 1.5rem 0;
+}
+
+#main-bar span p{
+  padding-top: 2rem;
+}
+
+.side-bar {
+  width: 40%;
+  height: auto;
+}
+
+#orientation {
+  padding-top: 2rem;
+}
+
+.side-box {
+  display: flex;
+  padding: 1rem;
+  border: 0.016rem solid lightgrey;
+}
+
+.side-box img {
+  width: 35%;
+  height: auto;
+}
+
+.side-box-text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 1rem;
+}
+
+.side-box-text h3, .side-box-text p, .side-box-text a {
+  padding-top: 0.5rem;
+}
+
+.side-box-text a {
+  color: rgb(47, 110, 240);
+}
+
+#lecture {
+  background-color: rgb(216, 216, 216);
+}
+
+@media only screen and (max-width: 1072px) {
+
+  #information {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  #main-bar {
+    display: none;
+  }
+
+  .side-bar {
+    width: 100%;
+    height: auto;
+  }
+
+  .side-box {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    border: none;
+  }
+
+  .side-box img {
+    width: 100%;
+    height: auto;
+  }
+
+  .side-box-text h3, .side-box-text p, .side-box-text a {
+    padding-top: 1rem;
+  }
+
+  #lecture {
+    background-color: inherit;
+  }
+
+  #campus, #lecture {
+    padding-top: 3rem;
+  }
+}
+
+/*  COURSE */
+
+#course-content{
+  width: 100%;
+  height: auto;
+  background-color: rgb(216, 216, 216);
+  padding-top: 2rem;
+}
+
+#course-content h1 {
+  text-align: center;
+}
+
+#course {
+  max-width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem 3.5rem;
+}
+
+.boxes {
+  width: 30%;
+  background-color: white;
+  margin: 1rem;
+}
+
+.boxes img {
+  max-width: 100%;
+  height: auto;
+}
+
+.text-box {
+  margin: 1rem auto 1.5rem 1rem;
+}
+
+.text-box h3, .text-box h4 {
+  padding-bottom: 0.5rem;
+}
+
+  /* COURSE - MOBILE */
+
+  @media only screen and (max-width: 1072px) {
+
+    #course-content {
+      background-color: rgb(246, 246, 246);
+      padding-bottom: 1.5rem;
+    }
+
+    #course {
+      display: none;
+      }
+
+    #course-mobile {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    #course-mobile a {
+      background-color: rgb(216, 216, 216);
+      padding: 1rem 1rem 1.5rem 1rem;
+      margin: 1rem 1rem 0.5rem 1rem;
+      color: black;
+      font-size: 1.5rem;
+    }
+  }
+
+/*  THESIS  */
+
+#thesis-exhibit {
+  padding: 2rem 1.5rem;
+  background-color: rgb(247, 247, 247);
+  max-width: 100%;
+  height: auto;
+}
+
+#thesis-exhibit h1{
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+.thesis-content {
+  width: 100%;
+  display: flex;
+}
+
+#video {
+  width: 60%;
+  height: auto;
+  margin-right: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+#video h3 {
+  padding-top: 1.5rem;
+  padding-bottom: 0.5rem;
+}
+
+#fisma {
+  background-color: rgb(216, 216, 216);
+}
+
+  /*  THESIS - MOBILE */
+
+  @media only screen and (max-width: 1072px) {
+
+    #thesis-exhibit {
+      padding: 0 0 1.5rem 0;
+    }
+
+    #thesis-exhibit h1 {
+      padding-bottom: 1rem;
+    }
+
+    #video h3, #video p, .side-bar {
+      display: none;
+    }
+
+    #video {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+/* FOOTER */
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1rem 4rem 1.5rem;
+}
+
+footer ul {
+  display: flex;
+  align-items: center;
+}
+
+footer a {
+  color: rgb(72, 72, 72);
+  padding-left: 0.5rem;
+}
+
+  /* FOOTER - MOBILE */
+
+  @media only screen and (max-width: 1072px) {
+
+    footer {
+      padding: 1rem;
+    }
+
+    footer ul {
+      display: none;
+    }
+
+    footer p {
+      font-size: 1.3rem;
+    }
+  }
